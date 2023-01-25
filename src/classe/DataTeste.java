@@ -27,6 +27,8 @@ public class DataTeste {
 		System.out.printf("\na data aleatoria escolhida foi: %d/%s/%d", aleatoria.dia, aleatoria.mes, aleatoria.ano);
 
 		entrada.close();
+		
+		//teste
 	}
 
 }
