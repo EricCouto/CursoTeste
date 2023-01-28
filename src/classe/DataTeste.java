@@ -23,8 +23,8 @@ public class DataTeste {
 		System.out.println("digite o ano do seu aniversario");
 		aniversario.ano = entrada.nextInt();
 
-		System.out.printf("a data de seu aniversario é : %d/%s/%d", aniversario.dia, aniversario.mes, aniversario.ano);
-		System.out.printf("\na data aleatoria escolhida foi: %d/%s/%d", aleatoria.dia, aleatoria.mes, aleatoria.ano);
+		System.out.printf("\na data de seu aniversario é : %d/%s/%d", aniversario.dia, aniversario.mes, aniversario.ano);
+		System.out.printf("\n\na data aleatoria escolhida foi: %d/%s/%d", aleatoria.dia, aleatoria.mes, aleatoria.ano);
 
 		entrada.close();
 		
