@@ -24,10 +24,14 @@ public class DataTeste {
 		aniversario.ano = entrada.nextInt();
 
 		String niver = aniversario.organizarData();
-		String ale = aleatoria.organizarData();
+		// String ale = aleatoria.organizarData();
 
 		System.out.println(niver);
-		System.out.println(ale);
+		System.out.println(aleatoria.organizarData() + "\n\n");
+
+		aleatoria.imprimirData();
+		aniversario.imprimirData();
+
 		/*
 		 * System.out.printf("\na data de seu aniversario é : %d/%s/%d",
 		 * aniversario.dia, aniversario.mes, aniversario.ano);
