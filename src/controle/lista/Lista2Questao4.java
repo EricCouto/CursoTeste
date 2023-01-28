@@ -16,6 +16,7 @@ public class Lista2Questao4 {
 
 		int resto = numero % 10;
 		int divisor = numero / 10;
+		
 		boolean veri2 = numero % 2 == 0;
 		boolean veri3 = (resto + divisor) % 3 == 0;
 		boolean veri5 = numero % 5 == 0;
