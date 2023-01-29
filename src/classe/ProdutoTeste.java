@@ -4,14 +4,10 @@ public class ProdutoTeste {
 
 	public static void main(String[] args) {
 
-		// Scanner entrada = new Scanner(System.in);
+		Produto p1 = new Produto("notebook", 4300.50, 0.25);
 
-		Produto p1 = new Produto();
-		p1.nome = "notebook";
-		p1.preco = 4300.50;
-		p1.desconto = 0.25;
 		var p2 = new Produto();
-		p2.nome = "caneta";
+		p2.nome = "caneta esferografica";
 		p2.preco = 12.80;
 		p2.desconto = 0.39;
 
