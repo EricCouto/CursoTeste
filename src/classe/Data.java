@@ -7,11 +7,10 @@ public class Data {
 	int ano;
 
 	Data() {
-		
-			dia = 01;
-			mes = "janeiro";
-			ano = 1970;
-		
+		dia = 01;
+		mes = "janeiro";
+		ano = 1970;
+
 	}
 
 	Data(int diaInit, String mesInit, int anoInit) {
