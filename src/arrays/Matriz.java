@@ -36,12 +36,10 @@ public class Matriz {
 		}
 
 		System.out.println("\na media da turma é: " + mediaTurma / (qtdAlunos * qtdNotas));
-		
-		
-		
-		for (double[] ds : notas) {
-			System.out.println(Arrays.toString(ds));
-			
+
+		for (double[] notasAlunos : notas) {
+			System.out.println(Arrays.toString(notasAlunos));
+
 		}
 
 		entrada.close();
