@@ -20,5 +20,5 @@ public class Equals {
 
 		System.out.println(u2.equals(new Date()));
 	}
-//hashcode ainda não abordado
+
 }
