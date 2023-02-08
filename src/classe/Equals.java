@@ -6,11 +6,11 @@ public class Equals {
 
 	public static void main(String[] args) {
 		Usuario u1 = new Usuario();
-		u1.nome = "pedro";
+		u1.nome = "pedro Silva";
 		u1.email = "pedro.silva@email.com";
 
 		Usuario u2 = new Usuario();
-		u2.nome = "pedro";
+		u2.nome = "pedro Silva";
 		u2.email = "pedro.silva@email.com";
 		
 		
