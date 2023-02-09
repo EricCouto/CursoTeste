@@ -2,6 +2,7 @@ package fundamentos.operadores;
 
 public class Logicos {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		boolean condicao1 = true;
