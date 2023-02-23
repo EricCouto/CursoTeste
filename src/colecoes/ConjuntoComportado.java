@@ -23,10 +23,12 @@ public class ConjuntoComportado {
 		nums.add(1);
 		nums.add(5);
 		nums.add(10);
-		
+
+		// nums.get(1); não é possivel acessar prlo indice
+
 		for (int inteiro : nums) {
 			System.out.println(inteiro);
-			
+
 		}
 	}
 
