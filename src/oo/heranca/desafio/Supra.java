@@ -2,20 +2,21 @@ package oo.heranca.desafio;
 
 public class Supra extends Carro {
 
-	Supra(int velocidadeMaxima) {
+	public Supra(int velocidadeMaxima) {
 		super(velocidadeMaxima);
 		delta = 15;
 	}
 
 	@Override
-	void acelerar() {
+	public void acelerar() {
 		super.acelerar();
 		super.acelerar();
 		super.acelerar();
 	}
 
 	@Override
-	void freiar() {
+
+	public void freiar() {
 		super.freiar();
 		super.freiar();
 		super.freiar();

@@ -1,7 +1,7 @@
 package oo.heranca;
 
 public class Monstro extends Jogador {
-	Monstro() {
+	public Monstro() {
 		this(0, 0);
 	}
 
@@ -9,7 +9,7 @@ public class Monstro extends Jogador {
 		super(x, y);
 	}
 
-	boolean atacar(Jogador oponente) {
+	public boolean atacar(Jogador oponente) {
 		int deltax = Math.abs(x - oponente.x);
 		int deltay = Math.abs(y - oponente.y);
 

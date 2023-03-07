@@ -1,19 +1,19 @@
 package oo.heranca.desafio;
 
 public class Uno extends Carro {
-	Uno(){
+	public Uno() {
 		super(220);
 	}
-	
+
 	@Override
-	void acelerar() {
+	public void acelerar() {
 		if (velocidade >= 0) {
 			velocidade += 10;
 		}
 	}
 
 	@Override
-	void freiar() {
+	public void freiar() {
 		if (velocidade > 0) {
 			velocidade -= 10;
 		}
