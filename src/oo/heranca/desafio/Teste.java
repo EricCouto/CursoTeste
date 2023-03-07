@@ -6,7 +6,7 @@ public class Teste {
 
 		Carro u1 = new Uno();
 
-		Carro s2 = new Supra();
+		Carro s2 = new Supra(280);
 
 //		u1.velocidade = 21;
 //		s2.velocidade = 45;
