@@ -12,4 +12,11 @@ public class Produto extends Object {
 		this.desconto = desconto;
 	}
 
+	@Override
+	public String toString() {
+		
+		double precoFinal = (preco * desconto);
+		return nome + " tem o preço de R$ " + precoFinal;
+	}
+
 }
