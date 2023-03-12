@@ -13,6 +13,14 @@ public class CalculoTeste2 {
 		calc = (x, y) -> x * y;
 		System.out.println(calc.executar(5, 5));
 
+		System.out.println(calc.legal());
+		System.out.println(Calculo.muitoLegal());
+
+		/*
+		 * Para as lambda funcionar a interface precisar ser funcional (ter apenas um
+		 * metodo)
+		 */
+
 	}
 
 }
