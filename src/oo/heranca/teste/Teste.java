@@ -33,7 +33,7 @@ public class Teste {
 		u1.acelerar();
 		System.out.println(u1);
 
-		System.out.println();
+		System.out.println(s2.velocidadedoAR());
 
 		s2.ligarTurbo();
 
