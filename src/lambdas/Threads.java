@@ -21,7 +21,7 @@ public class Threads {
 			}
 		};
 
-		Runnable trabalho3 = () -> {
+		Runnable trabalho3 = () -> { // lambda
 			for (int i = 0; i < 10; i++) {
 				System.out.println("tarefa #03 !!!");
 				try {
@@ -33,7 +33,7 @@ public class Threads {
 			}
 		};
 
-		Runnable trabalho4 = Threads::trabalho4;
+		Runnable trabalho4 = Threads::trabalho4; // referencia de metodo
 
 		Thread t1 = new Thread(trabalho1);
 		Thread t2 = new Thread(trabalho2);
@@ -46,7 +46,7 @@ public class Threads {
 		t4.start();
 	}
 
-	static void trabalho4() {
+	static void trabalho4() { 
 		for (int i = 0; i < 10; i++) {
 			System.out.println("tarefa #04 !!!!");
 			try {
