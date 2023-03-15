@@ -1,5 +1,7 @@
 package lambdas;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
@@ -12,23 +14,18 @@ public class Desafio {
 	// #5-- formatar: R$1234,56
 
 	public static void main(String[] args) {
-		
 
-		Function<Produto, Double> comDesconto = 
-				valor -> valor.desconto * valor.preco;
+		Function<Produto, Double> comDesconto = valor -> valor.desconto * valor.preco;
 
-		UnaryOperator<Double> imposto = 
-				valorImposto -> valorImposto >= 2500 ? valorImposto * 1.085 : valorImposto;
+		UnaryOperator<Double> imposto = valorImposto -> valorImposto >= 2500 ? valorImposto * 1.085 : valorImposto;
 
-		UnaryOperator<Double> frete = 
-				valorFrete -> valorFrete >= 3000 ? valorFrete + 50 : valorFrete + 100;
+		UnaryOperator<Double> frete = valorFrete -> valorFrete >= 3000 ? valorFrete + 50 : valorFrete + 100;
 
-		UnaryOperator<Double> arredondar = 
-				valorArredondado -> Double.parseDouble(String.format("%.2f", valorArredondado));
+		UnaryOperator<Double> arredondar = valorArredondado -> BigDecimal.valueOf(valorArredondado)
+				.setScale(2, RoundingMode.UP).doubleValue();
 
-		Function<Double, String> formatado = 
-				valorFinal -> ("R$" + valorFinal).replace(".", ",");
-				
+		Function<Double, String> formatado = valorFinal -> ("R$" + valorFinal).replace(".", ",");
+
 		Produto p = new Produto("celular", 875.75, 0.75);
 
 		String precoFinal = comDesconto.andThen(imposto).andThen(frete).andThen(arredondar).andThen(formatado).apply(p);
