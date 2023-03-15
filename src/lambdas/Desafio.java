@@ -26,7 +26,7 @@ public class Desafio {
 
 		Function<Double, String> formatado = valorFinal -> ("R$" + valorFinal).replace(".", ",");
 
-		Produto p = new Produto("celular", 875.75, 0.75);
+		Produto p = new Produto("celular", 10000.8765, 0.95);
 
 		String precoFinal = comDesconto.andThen(imposto).andThen(frete).andThen(arredondar).andThen(formatado).apply(p);
 		System.out.println("o valor ficou em: " + precoFinal);
