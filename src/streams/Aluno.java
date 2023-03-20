@@ -10,4 +10,9 @@ public class Aluno {
 		this.nota = nota;
 	}
 
+	@Override
+	public String toString() {
+		return "O aluno: " + nome + ", teve a nota " + nota;
+	}
+
 }
