@@ -14,12 +14,17 @@ public class NovaPessoa {
 		String nome = entrada.next();
 
 		Connection conexao = FabricaConexao.getConnection();
-		
+
+		/*
+		 * fazendo a passagem do dado como variavel para evitar o sql ataque que
+		 * consiste em passar um codigo sql como variavel podendo prejudicar o banco
+		 */
+
 		String sql = "INSERT INTO pessoas (nome) VALUES (?)";
-		//String sql = "INSERT INTO pessoas (nome, codigo) VALUES (?, ?)";
+		// String sql = "INSERT INTO pessoas (nome, codigo) VALUES (?, ?)";
 		PreparedStatement stmt = conexao.prepareStatement(sql);
 		stmt.setString(1, nome);
-		//stmt.setInt(2, 1);
+		// stmt.setInt(2, 1);
 		stmt.execute();
 
 		System.out.println("pessoa incluida com sucesso");
